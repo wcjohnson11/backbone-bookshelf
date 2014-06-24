@@ -1,4 +1,4 @@
-##*An unordered list things to do*
+##*An unordered list of some of the things to do*
 
 * Render book cards
 * Get bookData into Books collection
