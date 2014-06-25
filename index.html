@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Shelf of Books</title>
+  </head>
+  <body>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./bookdata.js"></script>
+    <script type="text/javascript" src="./bookModel.js"></script>
+    <script type="text/javascript" src="./booksCollection.js"></script>
+    <script type="text/javascript" src="./shelfView.js"></script>
+  <script type="text/javascript">
+
+      var bookShelf = new Books(bookData['books']);
+      console.log(bookData);
+      var shelf = new ShelfView({collection: bookShelf});
+      console.log(shelf);
+      $('body').append(shelf.$el);
+    // $(function(){
+
+
+    // });
+  </script>
+  </body>
+</html>
